@@ -20,11 +20,13 @@ To build a personalized movie recommendation system using collaborative filterin
 Files:
 
 ratings.csv: Contains 100,000 ratings from 600 users on 9,000+ movies
+
 → Columns: userId, movieId, rating, timestamp
 
 movies.csv: Contains movieId, title, and genres
 
-🔧 Technologies & Libraries:
+Technologies & Libraries:
+
 Python
 
 pandas, numpy
@@ -33,4 +35,6 @@ scikit-learn (for TruncatedSVD & evaluation)
 
 Matrix Factorization (Collaborative Filtering)
 
-## 
+## output
+
+![Image](https://github.com/user-attachments/assets/a519990a-a2ed-410d-8543-247e898d719e)
