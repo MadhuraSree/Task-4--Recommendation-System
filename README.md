@@ -12,10 +12,14 @@ MENTOR : NEELA SANTHOSH KUMAR
 
 ## Task-4--Recommendation-System
 
-To build a personalized movie recommendation system using collaborative filtering with Singular Value Decomposition (SVD) that predicts a user's movie preferences and recommends top-rated movies they haven’t seen yet.
+This project focuses on building a personalized movie recommendation system using Collaborative Filtering powered by Singular Value Decomposition (SVD). The objective is to predict which movies a user would likely enjoy based on their previous ratings and preferences of similar users.
 
-📂 Dataset Used:
-📁 Source: MovieLens "ml-latest-small"
+By using matrix factorization (SVD), we break down the user-item ratings matrix into lower-dimensional latent factors that represent user and movie characteristics. This approach helps in capturing complex patterns in user behavior and movie similarities.
+
+This system recommends top N movies to a user that they haven’t rated yet, based on predicted scores. The task demonstrates the real-world application of recommender systems and is developed as part of the CodTech IT Solutions Machine Learning Internship.
+
+## Dataset Used:
+Source: MovieLens "ml-latest-small"
 
 Files:
 
@@ -25,7 +29,32 @@ ratings.csv: Contains 100,000 ratings from 600 users on 9,000+ movies
 
 movies.csv: Contains movieId, title, and genres
 
-Technologies & Libraries:
+## Objectives
+
+Load and preprocess a movie ratings dataset
+
+Create a user–movie ratings matrix
+
+Apply Truncated SVD to reduce dimensionality and discover latent features
+
+Reconstruct predicted ratings matrix for all users and movies
+
+Recommend Top-N unseen movies for any given user based on predicted scores
+
+Evaluate the system using RMSE (Root Mean Squared Error)
+
+## Key Features
+✅ Builds a user–item matrix from real rating data
+
+✅ Applies TruncatedSVD from sklearn.decomposition
+
+✅ Predicts ratings for unseen movies
+
+✅ Recommends top 5 personalized movies per user
+
+✅ Calculates RMSE to measure recommendation accuracy
+
+## Technologies & Libraries:
 
 Python
 
